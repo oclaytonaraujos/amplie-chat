@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  position: relative;     
+}
+
+.bloco {
+  background-color: rgb(89, 0, 255);
+  height: 500px;
+  width: 500px;   
+}
