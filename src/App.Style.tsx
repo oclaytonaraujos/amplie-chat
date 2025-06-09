@@ -5,13 +5,13 @@ import { FiAlignCenter } from "react-icons/fi";
 
 export const OpenMenu = styled(FiAlignCenter)`
   font-size: 2rem;
-  color: black;
+  color: white; /* Ajuste a cor para o fundo escuro da sidebar */
   cursor: pointer;
 `;
 
 export const CloseMeunu = styled(FiAlignJustify)`
   font-size: 2rem;
-  color: black;
+  color: white; /* Ajuste a cor para o fundo escuro da sidebar */
   cursor: pointer;
 `;
 
@@ -24,9 +24,11 @@ export const BtnMenu = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: transparent; /* Torna o fundo transparente para o botão de menu */
 `;
 
 export const Content = styled.div<{ isOpen: boolean }>`
-  transition: margin-left 0.9s;
-  margin-left: ${({ isOpen }) => (isOpen ? '200px' : '0')};
+  transition: margin-left 0.3s; /* Ajuste a transição para 0.3s */
+  margin-left: ${({ isOpen }) => (isOpen ? '200px' : '60px')}; /* Ajuste a margem para 60px quando fechado */
+  padding: 20px; /* Adicione padding para o conteúdo não ficar colado na sidebar */
 `;
