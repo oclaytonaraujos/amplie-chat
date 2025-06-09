@@ -1,10 +1,10 @@
-const Usurarios = () => {
+const Usuarios = () => {
   return (
     <div>
-      <h1>Usurarios</h1>
-      <p>This is the Usurarios page.</p>
+      <h1>Usuarios</h1>
+      <p>This is the Usuarios page.</p>
     </div>
   );
 };
 
-export default Usurarios;
+export default Usuarios;
